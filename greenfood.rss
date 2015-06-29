@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>GreenFood</title>
+  <link>http://greenfood-carinab.c9.io/</link>
+  <description>Green Food!</description>
+  <item>
+    <title>Recipes</title>
+    <link>http://greenfood-carinab.c9.io/recipes.html</link>
+    <description>New Recipes!</description>
+  </item>
+  <item>
+    <title>Contact</title>
+    <link>http://greenfood-carinab.c9.io/contact.html</link>
+    <description>Contact us!</description>
+  </item>
+</channel>
+
+</rss>

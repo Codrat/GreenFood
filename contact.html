@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GreenFood</title>
+    <link href="main.css" type="text/css" rel="stylesheet"/>
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1"/>-->
+    <script src="js/bmi.js" type="text/javascript">
+    </script>
+    <script src="js/search.js" type="text/javascript">
+    </script>
+    	<!--[if lt IE 8]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" 
+ type="text/javascript"></script>
+	<![endif]-->
+	
+	<!--[if lte IE 6]>
+		<link rel="stylesheet" type="text/css" href="css/ie6.css" />
+	<![endif]-->
+  </head>
+  
+  <body>
+      
+    <header>
+	    <div class="wrapper">
+	    	<a href="index.html" id="logo" alt="GreenFood">
+	    	<img src="images/logo.png"/></a>
+	    	<img src="images/menu_50_thickvert.png" id="menu"/>
+	    	<nav class="effect">
+              <a href="index.html" id="home"><span data-hover="HOME">HOME</span></a>
+              <a href="recipes.html" id="recipes"><span data-hover="RECIPES">RECIPES</span></a>
+              <a href="about.html" id="about"><span data-hover="ABOUT">ABOUT</span></a>
+              <a href="contact.html" id="contact"><span data-hover="CONTACT">CONTACT</span></a>
+            </nav>
+	    	<span id="title">EAT healthy&#133; stay FIT&#133; enjoy LIFE and live your DREAM!</span>
+    	</div><!--.wrapper-->
+    </header>
+    
+    <article class="a1">
+      <div class="callout">
+        	<segment class="calleft">
+        	  <span id="motto">A mind is a terrible thing to waste and a waist is a terrible thing to mind!</span> 
+        	</segment>
+        	
+          <segment class="slideshow">
+            <figure>
+              <img src="images/slide/s1.jpg" alt="s1"/>
+            </figure>
+            <figure>
+              <img src="images/slide/s2.jpg" alt="s2"/> 
+            </figure>
+            <figure>
+              <img src="images/slide/s3.jpg" alt="s3"/><figcaption>Zucchini stuffed with mushrooms, tomatoes and cheese</figcaption> 
+            </figure>
+            <figure>
+              <img src="images/slide/s4.jpg" alt="s4"/><figcaption>Assorted tarts with seasonal vegetables</figcaption> 
+            </figure>
+            <figure>
+              <img src="images/slide/s5.jpg" alt="s5"/><figcaption>Breakfast delight - Yogurt, grapes and lemon</figcaption> 
+            </figure>
+            <figure>
+              <img src="images/slide/s6.jpg" alt="s6"/><figcaption>Grilled chicken breast with wok vegetables</figcaption> 
+            </figure>
+            <figure>
+              <img src="images/slide/s7.jpg" alt="s7"/><figcaption>Green smoothie</figcaption> 
+            </figure>
+            <figure>
+              <img src="images/slide/s8.png" alt="s8"/><figcaption>Salmon, low-fat cottage cheese and rucola salad</figcaption> 
+            </figure>
+            <figure>
+              <img src="images/slide/s9.jpg" alt="s9"/><figcaption>Quinoa salad with grilled turkey breast</figcaption> 
+            </figure>
+            <figure>
+              <img src="images/slide/s10.jpg" alt="s10"/><figcaption>Spinach, pear and chicken breast salad</figcaption> 
+            </figure>
+            <figure>
+              <img src="images/slide/s11.jpg" alt="s11"/><figcaption>Salmon, low-fat cottage cheese and tomato sandwich</figcaption> 
+            </figure>
+            <figure>
+              <img src="images/slide/s12.jpg" alt="s12"/><figcaption>Healthy egg sandwich</figcaption> 
+            </figure>
+          </segment> <!-- slideshow -->
+      </div>  <!-- callout -->
+    </article>
+      
+    <article class="a2">
+      <div class="mbody">
+        <segment class="site">
+            <segment class="top">
+              
+              
+              
+              <img id ="wrap" src="images/wrap.png"/>
+              <img id="namemail" src="images/namemail.png"/>
+              <img id="comment" src="images/comment.png"/>
+              <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1356.056215316722!2d27.572064329312365!3d47.17523525398898!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5840c65f0152765a!2sFaculty+of+Economics+and+Business+Administration!5e0!3m2!1sen!2sro!4v1433159673603" width="734" height="200" frameborder="0" style="border:0"></iframe>
+              <form method="post" action="contact.php">
+                <input type="text" name="cname" placeholder="Name" required>
+                <input type="email" name="cemail" placeholder="Email" required>
+            
+
+                
+                <textarea rows="5" cols="20" name="cmessage" placeholder="Insert comment here" required></textarea>
+    
+                <input type="submit" value="Send" name="csubmit">
+               </form>
+            </segment>
+            <segment class="below">
+              <segment id="bleft">
+                <a href="http://greenfood.cloudaccess.host/" alt="GreenFoodBlog">
+	    	        <img src="images/wordpress_logo2.png"/></a>
+              </segment>
+              
+              <segment id="bmid">
+                <span id="bmi">Body Mass Index Calculator</span>
+                <img id="ihw" src="images/heightwidth.png"/>
+                <span id="bmihw">Height (cm): <input type="text" id="height"/>
+                </span>
+                <img id="ihw" src="images/heightwidth.png"/>
+                <span id="bmihw">Weight (kg): <input type="text" id="weight"/>
+                </span>
+                <input type="submit" value="Calculate" onclick="computeBMI();">
+              </segment>
+              
+              <segment id="bright">
+                <span id="cat">BMI Categories: </span>
+                <span id="cat">Underweight = &#60;18.5 </span>
+                <span id="cat">Normal weight = 18.5-24.9 </span>
+                <span id="cat"> Overweight = 25-29.9 </span>
+                <span id="cat"> Obesity = &#62;30</span>
+                <img id="ibmi" src="images/bmi.png"/>
+                <span class="out">Your BMI is: <span id="output"></span></span>
+              </segment>
+            </segment>
+        </segment>
+        
+        <segment class="social">
+          <a href="https://www.facebook.com/pages/Healthy-Green-Food/1594745364113225" alt="Facebook">
+	    	  <img src="images/social/facebook.png"/></a>
+	    	  <a href="https://plus.google.com/communities/107483529082201302879" alt="Google+">
+	    	  <img src="images/social/g+.png"/></a>
+	    	  <a href="greenfood.rss" alt="RSS">
+	    	  <img src="images/social/rss.png"/></a>
+	    	  <a href="https://www.pinterest.com/healthygreenfoo/green-food/" alt="Pinterest">
+	    	  <img src="images/social/pinterest.png"/></a>
+
+          <form action="http://www.google.com/search" method="get" onSubmit="search(this)">
+            <input name="q" type="hidden"/>
+            <segment id="search">
+              <img id="isch" src="images/search.png"/>
+              <input name="text" type="search" placeholder="Search"/>
+              <input type="submit" value=""/>
+            </segment>
+          </form>
+          
+          <segment id="subscribe">
+            <img id="is" src="images/subscribe.png"/>
+            <span id="sub">Sign up to our newsletter</span>
+            <form method="POST" action="connect.php">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="and your email" required>
+            <input type="submit" value="Subscribe" name="Subscribe">
+            </form>
+          </segment> 
+        </segment>
+      </div> <!-- mbody -->
+    </article>
+    
+    <footer>
+      <div class="wrapper2">
+	    	<a href="index.html" id="logo" alt="GreenFood">
+	    	<img src="images/logo.png"/></a>
+	    	<segment class="menu">
+	    	  <span class="cont">Contact Us</span>
+	    	  <span class="cont2"><span id="e">email :</span> burduja.carina@gmail.com</span>
+	    	  <span class="cont2"><span id="e">phone :</span> (0040) 701 234 567</span> 
+	    	</segment>
+	    	<span class="cpy">Copyright 2017 &#169; <span id="b">Carina Burduja.</span> All rights reserved.</span>
+	    </div>
+    </footer>
+    
+  </body>
+</html>
